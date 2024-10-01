@@ -54,7 +54,7 @@ contract MerkleAirdropTest is ZkSyncChainChecker, StdInvariant, Test {
 
         uint256 endingBalance = token.balanceOf(user);
 
-        assertEq(endingBalance-startingBalance, CLAIM_AMOUNT);
+        assertEq(endingBalance - startingBalance, CLAIM_AMOUNT);
     }
 
     function testUserCannotDoubleClaim() external {
